@@ -25,4 +25,16 @@ This is the frontend for bookstore application, built with React and Vite. It pr
 
 ### Prerequisites
 - Node.js 18+
-- npm or yarn
+- npm
+
+### Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/deviprasad-bal/bookstore-management-frontend.git
+   cd bookstore_fe
+
+2. **Install dependencies**
+    npm install
+
+3. **Start development Server**
+    npm run dev
