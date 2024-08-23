@@ -1,12 +1,28 @@
-<<<<<<< HEAD
-# bookstore-management-frontend
-=======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Frontend README
 
-Currently, two official plugins are available:
+```markdown
+# Bookstore Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 9264797 (initial commit for frontend)
+## Overview
+This is the frontend for bookstore application, built with React and Vite. It provides a user interface for managing books, authors, genres, editions, search functionality, cart and payment.
+
+## Features
+- **Books List**: View and search for books and add book with details.
+- **Book Details**: View details and editions of a selected book and whether book is in stock or not.
+- **Author List**: View authors and look for books under them.
+- **Genre List**: View genres and look for books under that genre.
+- **Cart**: Add items to the cart, view the cart, and proceed to payment.
+- **Payment**: Summary of cart and option to accept or reject the payment.
+
+## Technologies
+- **React**: For building the user interface.
+- **Vite**: For fast builds and development.
+- **CSS Modules**: For styling components.
+- **JavaScript**: For dynamic functionality and interactions.
+
+## Setup
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
