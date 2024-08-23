@@ -1,0 +1,50 @@
+.genres-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.genres-list h2 {
+  font-family: 'ParryHotter', 'Playfair Display', serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  color: #ccc1af;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 2fr));
+  gap: 20px;
+}
+
+.genre-item {
+  background: url('../assets/card.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.genre-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genre-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.genre-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.genre-item a:hover {
+  color: #000;
+}

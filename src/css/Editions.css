@@ -1,0 +1,50 @@
+.edition-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.edition-item {
+  background: url('../assets/card.png') no-repeat center center;
+  background-size: cover;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  padding-left: 80px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edition-item h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.edition-item p {
+  margin: 5px 0;
+}
+
+.in-stock {
+  color: rgb(0, 128, 0);
+  font-weight: bold;
+}
+
+.low-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+

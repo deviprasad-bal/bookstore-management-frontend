@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'ParryHotter';
+  src: url('./fonts/parry-hotter.regular.ttf') format('truetype');
+}
+
+.authors-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.authors-list h2 {
+  font-family: 'ParryHotter', 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ccc1af;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.authors-list ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.author-item {
+  background: url('../assets/card.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author-item a {
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.author-item a:hover {
+  transform: scale(1.1);
+}
+
+.author-item h3 {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0;
+}
+
+.author-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.author-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author-item a:hover {
+  color: #000;
+}

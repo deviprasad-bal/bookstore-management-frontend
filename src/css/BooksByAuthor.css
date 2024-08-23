@@ -1,0 +1,28 @@
+.books-by-author ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .books-by-author li {
+    margin: 10px 0;
+  }
+
+  .books-by-author h2 {
+    color: white;
+  }
+  
+  .book-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .book-item h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .book-item p {
+    margin: 5px 0;
+  }
+  
