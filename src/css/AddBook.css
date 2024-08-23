@@ -1,0 +1,75 @@
+.add-book-form {
+    background: url('../assets/card.png') no-repeat center center;
+    background-size: cover;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .add-book-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-book-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .add-book-form input,
+  .add-book-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .add-book-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #341d17;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .add-book-form input[type="number"]::-webkit-outer-spin-button,
+.add-book-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+  .add-book-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .author-names {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .author-names label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .success-message {
+    font-size: 1.3rem;
+    color: rgb(6, 105, 6);
+  }
+
+  .errorMessage {
+    color: red;
+  }
+  

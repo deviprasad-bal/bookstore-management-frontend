@@ -1,0 +1,80 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 20px; 
+  color: #c9bfad;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
+}
+
+.app-header {
+  font-family: 'Pacifico', cursive; 
+  font-size: 1.6rem;
+  margin-bottom: 20px; 
+  background-color: #b85042;
+  padding: 20px;
+  color: white;
+  background-image: url('../assets/demoimg.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 px;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 2); 
+}
+
+main {
+  padding: 20px;
+}
+
+.cart-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 40px;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -15px; 
+  right: -15px;
+  background-color: red;
+  color: white;
+  border-radius: 50%; 
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: none;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+}
