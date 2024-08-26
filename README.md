@@ -30,7 +30,7 @@ This is the frontend for bookstore application, built with React and Vite. It pr
 1. **Clone the repository**:
    ```
    git clone https://github.com/deviprasad-bal/bookstore-management-frontend.git
-   cd bookstore_fe
+   cd bookstore-management-frontend-main
 
 2. **Install dependencies**
     npm install
