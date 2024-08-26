@@ -1,7 +1,6 @@
 
 ### Frontend README
 
-```markdown
 # Bookstore Frontend
 
 ## Overview
@@ -29,9 +28,9 @@ This is the frontend for bookstore application, built with React and Vite. It pr
 
 ### Installation
 1. **Clone the repository**:
-   ```bash
+   ```
    git clone https://github.com/deviprasad-bal/bookstore-management-frontend.git
-   cd bookstore_fe
+   cd bookstore-management-frontend
 
 2. **Install dependencies**
     npm install
