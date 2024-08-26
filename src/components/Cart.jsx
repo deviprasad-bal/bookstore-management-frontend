@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/Cart.css';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cartItems, setCartItems }) => {
     const calculateTotalPrice = () => {
@@ -11,15 +12,34 @@ const Cart = ({ cartItems, setCartItems }) => {
         setCartItems(cartItems.filter(item => item.id !== id));
     };
 
-    const handleUpdateQuantity = (id, quantity) => {
+    const handleUpdateQuantity = (id, quantity, availableStock) => {
+        const parsedQuantity = parseInt(quantity);
+
+        if (parsedQuantity > availableStock) {
+            toast.error(`Cannot add more than ${availableStock} units to the cart.`);
+            return;
+        }
+
+        if (parsedQuantity < 1) {
+            toast.error('Quantity cannot be less than 1.');
+            return;
+        }
+
         setCartItems(cartItems.map(item => 
-            item.id === id ? { ...item, quantity: parseInt(quantity) } : item
+            item.id === id ? { ...item, quantity: parsedQuantity } : item
         ));
     };
 
     const navigate = useNavigate();
 
     const handleProceedToPayment = () => {
+        const hasInvalidQuantity = cartItems.some(item => !item.quantity || isNaN(item.quantity));
+
+        if (hasInvalidQuantity) {
+            toast.error('Please enter a valid quantity for all items before proceeding to payment.');
+            return;
+        }
+
         navigate('/payment');
     };
 
@@ -41,10 +61,13 @@ const Cart = ({ cartItems, setCartItems }) => {
                                     type="number" 
                                     value={item.quantity} 
                                     min="1"
-                                    onChange={(e) => handleUpdateQuantity(item.id, e.target.value)}
+                                    onChange={(e) => handleUpdateQuantity(item.id, e.target.value, item.inventory.totalStocks)}
                                 />
                             </p>
                             <button onClick={() => handleRemoveFromCart(item.id)}>Remove</button>
+                            {item.quantity > item.inventory.totalStocks && (
+                                <p className="error-message">Not enough stock. Please reduce the quantity.</p>
+                            )}
                         </div>
                     ))}
                     <p><strong>Total Price: ₹ {calculateTotalPrice()}</strong></p>

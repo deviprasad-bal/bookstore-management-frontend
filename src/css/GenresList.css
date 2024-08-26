@@ -1,3 +1,4 @@
+/* GenresList.css */
 .genres-list {
   padding: 20px;
   max-width: 1200px;
@@ -11,6 +12,22 @@
   margin-bottom: 20px;
   font-size: 3em;
   color: #ccc1af;
+}
+
+.genre-group {
+  margin-bottom: 40px;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+}
+
+.group-letter {
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  color: #ccc1af;
+  margin-right: 10px;
 }
 
 .genres-grid {
@@ -34,10 +51,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.genre-item h3 {
+.genre-item h4 {
   margin: 0;
   font-size: 1.2em;
-  color: #555;
+  color: #580d0d;
 }
 
 .genre-item a {

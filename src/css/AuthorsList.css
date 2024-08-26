@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'ParryHotter';
-  src: url('./fonts/parry-hotter.regular.ttf') format('truetype');
+  src: url('../fonts/parry-hotter.regular.ttf') format('truetype');
 }
 
 .authors-list {
