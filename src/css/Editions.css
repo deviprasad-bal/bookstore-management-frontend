@@ -48,3 +48,25 @@
   font-size: 0.9em;
 }
 
+.add-to-cart-button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: black; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 7px 12px; /* Padding around text */
+  font-size: 12px; /* Text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.add-to-cart-button:active {
+  background-color: #1e7e34; /* Even darker green when clicked */
+}
+
+.add-to-cart-button:focus {
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 1); /* Add focus outline */
+}

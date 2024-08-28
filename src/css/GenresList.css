@@ -8,13 +8,14 @@
 .genres-list h2 {
   font-family: 'ParryHotter', 'Playfair Display', serif;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 3em;
   color: #ccc1af;
 }
 
 .genre-group {
+  margin-top: -50px;
   margin-bottom: 40px;
 }
 

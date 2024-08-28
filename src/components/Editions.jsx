@@ -56,9 +56,8 @@ const Editions = ({ onAddToCart , cartItems}) => {
                     </p>
                     <button 
                         className="add-to-cart-button" 
-                        onClick={() => handleAddToCart(item)}
-                        >
-                        Add to Cart
+                        onClick={() => handleAddToCart(item)}>
+                        <strong>Add to Cart</strong>
                     </button>
                     {item.inventory.totalStocks === 0 && (
                         <p className="error-message">Out of stock: Cannot be added to cart.</p>
